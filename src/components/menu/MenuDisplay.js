@@ -9,7 +9,7 @@ export const MenuDisplay = () => (
 			<Link to={`/profile`} ><div>Perfil</div></Link>
 			<div>Cerrar Sesión</div>
 		</nav>*/
-		<Navbar collapseOnSelect>
+		<Navbar fixedTop collapseOnSelect>
 		  	<Navbar.Header>
 		    	<Navbar.Brand>
 		      		<a href="#brand">React-Bootstrap</a>
