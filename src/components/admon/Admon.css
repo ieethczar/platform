@@ -1,0 +1,30 @@
+.AdmonPage{
+	margin-top: 30px;
+}
+
+.AdmonProductoItem{
+	padding: 10px;
+	text-align: center;
+	height: 500px;
+}
+.AdmonProductoItem .row{
+	padding: 5px;
+	margin: auto 0px;
+	height: 100%;
+	color: #666;
+}
+.AdmonItemImagen{
+	height: 200px;
+}
+.AdmonItemImagen img{
+	height: 100%;
+	margin: 0px auto;
+}
+.AdmonItemTitulo{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 130%;
+}
+.AdmonItemPrecio,.AdmonItemDescuento,.AdmonItemPiezas{
+	font-size: 140%;
+}

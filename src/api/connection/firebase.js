@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 // Initialize Firebase
 var config = {
-    apiKey: "AIzaSyDROWEKsj2wDeLEBQVf2pVINpBPN2Xg_v4",
-    authDomain: "sumix-14981.firebaseapp.com",
-    databaseURL: "https://sumix-14981.firebaseio.com",
-    projectId: "sumix-14981",
-    storageBucket: "gs://sumix-14981.appspot.com/",
-    messagingSenderId: "1010733778443"
+    apiKey: "AIzaSyCSo6XYvYzdfDS2HAr6rdvqBMxjYFbg6C4",
+    authDomain: "platform-66a13.firebaseapp.com",
+    databaseURL: "https://platform-66a13.firebaseio.com",
+    projectId: "platform-66a13",
+    storageBucket: "gs://platform-66a13.appspot.com/",
+    messagingSenderId: "580887770244"
 };
 firebase.initializeApp(config);
 
