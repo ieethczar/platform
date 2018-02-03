@@ -1,5 +1,6 @@
 @import './components/home/Home.css';
 @import './components/footer/Footer.css';
+@import './components/error/Error.css';
 
 .App {
   text-align: center;
