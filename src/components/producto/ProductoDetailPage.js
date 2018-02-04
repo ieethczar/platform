@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {ProductoDetailDisplay} from './ProductoDetailDisplay';
 
-//import {getProductById} from '../../api/google';
+import {getProductById} from '../../api/google';
 
 class ProductoDetailPage extends Component{
     state={
@@ -10,11 +10,11 @@ class ProductoDetailPage extends Component{
 	componentWillMount() {
 		const id=this.props.match.params.id;
 		console.log("Recibido: "+id);
-		/*getProductById(id)
-			.then(video=>{
-				this.setState({video});
+		getProductById(id)
+			.then(producto=>{
+				this.setState({producto});
 			})
-			.catch(e=>console.log(e.message));*/
+			.catch(e=>console.log(e.message));
 	}
     render(){
     	const {producto} = this.state;
