@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {ProductoDetailDisplay} from './ProductoDetailDisplay';
 
-import {getProductById} from '../../api/google';
+//import {getProductById} from '../../api/google';
 
 class ProductoDetailPage extends Component{
     state={

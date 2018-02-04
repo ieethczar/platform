@@ -32,13 +32,23 @@ export const MenuDisplay = () => (
 			        	Login
 			      	</NavItem>
 			      	<NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-				        <MenuItem eventKey={3.1}>
-				        	<Link to={"/perfil"}>
-				        		Perfil
-				      		</Link>
-				      	</MenuItem>
+				        <Link to={"/perfil"}>
+					        Perfil
+					    </Link>
 				        <MenuItem divider />
-				        <MenuItem eventKey={3.2}>
+				        <Link to={"/admon"}>
+					        Administrar productos
+					    </Link>
+			      	</NavDropdown>
+	    		</Nav>
+	  		</Navbar.Collapse>
+		</Navbar>
+	);
+
+
+/*
+
+<MenuItem eventKey={3.2}>
 				        	<Link to={"/admon"}>
 				        		Administrar productos
 				      		</Link>
@@ -69,8 +79,5 @@ export const MenuDisplay = () => (
 				        		Cerrar Sesión
 				      		</Link>
 				      	</MenuItem>
-			      	</NavDropdown>
-	    		</Nav>
-	  		</Navbar.Collapse>
-		</Navbar>
-	);
+
+*/

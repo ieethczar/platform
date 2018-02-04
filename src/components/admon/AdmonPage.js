@@ -2,6 +2,20 @@ import React, {Component} from 'react';
 import {AdmonPageDisplay} from './AdmonPageDisplay';
 import firebase from '../../api/connection/firebase';
 
+///import {getProducts} from '../../api/google';
+
+/*function getProducts(){
+    let contenidos = [];
+    firebase.database().ref("productos")
+        .on("child_added", snap=>{
+            let registro = snap.val();
+            registro["id"] = snap.key;
+            contenidos.push(registro);
+            return contenidos;
+        });
+    return contenidos;
+}*/
+
 class AdmonPage extends Component{
 	state = {
         file:null,
@@ -14,12 +28,13 @@ class AdmonPage extends Component{
         let contenidos = this.state.contenidos;
         firebase.database().ref("productos")
         	.on("child_added", snap=>{
-              	let nino = snap.val();
+              	let registro = snap.val();
               	//if(!nino.photos) nino["photos"] = ["link"];
-              	nino["id"] = snap.key;
-              	contenidos.push(nino);
+              	registro["id"] = snap.key;
+              	contenidos.push(registro);
               	this.setState({contenidos});
         });
+        //this.setState({contenidos:getProducts()});
     };
 
     onChangeForm = (e) => {
