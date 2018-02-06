@@ -42,7 +42,7 @@ class LoginPage extends Component{
 		const login = this.state.login;
 		login[input] = value;
 		this.setState({login});
-		//console.log(login);
+		console.log(login);
 	};
 
 	saveRegistro = (e) => {
@@ -58,22 +58,23 @@ class LoginPage extends Component{
 			this.setState({error:null});
 	};
 
-	// onSubmit = (e) => {
-	// 	e.preventDefault();
-	// 	let user = checkUser(this.state.login);
-	// 	if(user){
-	// 		user = JSON.stringify(user);
-	// 		localStorage.setItem("user", user);
-	// 		this.props.history.push("/perfil")
-	// 	}else{
-	// 		this.setState({error:"El usuario no coincide"});
-	// 	}
+	onSubmit = (e) => {
+	 	e.preventDefault();
+	 	//let user = checkUser(this.state.login);
+	 	let user = this.state.login;
+	 	if(user){
+	 		user = JSON.stringify(user);
+	 		localStorage.setItem("user", user);
+	 		this.props.history.push("/perfil")
+	 	}else{
+	 		this.setState({error:"El usuario no coincide"});
+	 	}
 		
 
-	// 	//if(user){
-	// 	//	localStorage.setItem("user", user);
-	// 	//}
-	// };
+	 	//if(user){
+	 	//	localStorage.setItem("user", user);
+	 	//}
+	};
 
 	onLogin = (e) => {
 		e.preventDefault();

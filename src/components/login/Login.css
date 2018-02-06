@@ -1,0 +1,23 @@
+.LoginPage{
+	margin-top: 70px;
+}
+
+.RegistroPage{
+	margin-top: 70px;
+}
+
+.LoginPage form,.RegistroPage form{
+	padding: 10px;
+}
+.LoginPage button,.RegistroPage button{
+	width: 100%;
+}
+.LoginPage p,.RegistroPage p{
+	text-align: center;
+}
+.LoginPage p label,.RegistroPage p label{
+	
+}
+.LoginPage link,.RegistroPage link{
+	font-weight: bold;
+}
